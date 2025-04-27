@@ -1,6 +1,9 @@
 ---
 import Login from '../components/Login.astro';
 import Layout from '../layouts/Layout.astro';
+import { getSession} from "auth-astro/server"
+
+const session = await getSession(Astro.request)
 
 ---
 
@@ -8,6 +11,15 @@ import Layout from '../layouts/Layout.astro';
     <h1>Antes de login</h1>
     <Login />
     <h2>Despues de login</h2>
+
+    {session ? (
+        <h1>{session.user?.name}</h1>
+        <p>{session.user?.email}</p>
+        <img src={session.user?.image} alt={session.user?.name} />
+    ) : (
+        <h1>No estas autenticado</h1>
+    )}
+
 </Layout>
 
 
