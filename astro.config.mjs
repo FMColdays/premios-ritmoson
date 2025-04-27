@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config'
 import auth from 'auth-astro'
 import tailwindcss from '@tailwindcss/vite'
 
-import netlify from '@astrojs/netlify';
+import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   vite: {
@@ -11,5 +11,5 @@ export default defineConfig({
 
   output: 'server',
   integrations: [auth()],
-  adapter: netlify(),
+  adapter: vercel(),
 })

@@ -1,20 +1,13 @@
 ---
+import Login from '../components/Login.astro';
 import Layout from '../layouts/Layout.astro';
-import { SignIn, SignOut } from 'auth-astro/components'
-import { getSession} from "auth-astro/server"
 
-const session = await getSession(Astro.request)
 ---
 
 <Layout>
-    <SignIn class="p-2 w-24 bg-blue-500 text-white" provider="google" >Login</SignIn>
-    <SignOut class="p-2 w-24 bg-red-500 text-white" >Logout</SignOut>
-
-    {session  && (
-        <p>{session.user?.name}</p>
-        <p>{session.user?.email}</p>
-        <img src={session.user?.image} alt="" />
-    )}
+    <h1>Antes de login</h1>
+    <Login />
+    <h2>Despues de login</h2>
 </Layout>
 
 
