@@ -9,11 +9,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^8.1.4",
+    "@astrojs/react": "^4.2.5",
+    "@astrojs/vercel": "^8.0.4",
     "@auth/core": "^0.37.4",
+    "@fontsource-variable/ibm-plex-sans": "^5.2.5",
+    "@fontsource-variable/onest": "^5.2.7",
     "@tailwindcss/vite": "^4.1.4",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "astro": "^5.7.5",
     "auth-astro": "^4.2.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.4"
   }
 }

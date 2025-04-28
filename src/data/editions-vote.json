@@ -1,0 +1,172 @@
+[
+    {
+        "category": "Salsero del año",
+        "nominees": [
+            {
+                "name": "Daniel Gutiérrez",
+                "image": "/img/nominees/daniel-gutierrez.png",
+                "link": ""
+            },
+            {
+                "name": "Canek Palma",
+                "image": "/img/nominees/canek-palma.png",
+                "link": ""
+            },
+            {
+                "name": "José Velázquez",
+                "image": "/img/nominees/jose-velazquez.png",
+                "link": ""
+            },
+            {
+                "name": "Paini Zárate",
+                "image": "/img/nominees/paini-zarate.png",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Salsera del año",
+        "nominees": [
+            {
+                "name": "Isabel Villareal",
+                "image": "/img/nominees/isabel-villareal.png",
+                "link": ""
+            },
+            {
+                "name": "Adriana García",
+                "image": "/img/nominees/adriana-garcia.png",
+                "link": ""
+            },
+            {
+                "name": "Jessica Cueto",
+                "image": "/img/nominees/jessica-cueto.png",
+                "link": ""
+            },
+            {
+                "name": "Karime Aramoni",
+                "image": "/img/nominees/karime-aramoni.png",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Bachatero del año",
+        "nominees": [
+            {
+                "name": "Bayron Zárate",
+                "image": "/img/nominees/bayron-zarate.png",
+                "link": ""
+            },
+            {
+                "name": "Julio Torres",
+                "image": "/img/nominees/julio-torres.png",
+                "link": ""
+            },
+            {
+                "name": "Erick González",
+                "image": "/img/nominees/erick-gonzalez.png",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Bachatera del año",
+        "nominees": [
+            {
+                "name": "Arely Ruiz",
+                "image": "/img/nominees/arely-ruiz.png",
+                "link": ""
+            },
+            {
+                "name": "Rocío Beck",
+                "image": "/img/nominees/rocio-beck.png",
+                "link": ""
+            },
+            {
+                "name": "Verónica López",
+                "image": "/img/nominees/veronica-lopez.png",
+                "link": ""
+            },
+            {
+                "name": "Sandra Ledezma",
+                "image": "/img/nominees/sandra-ledezma.png",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Novat@ del año",
+        "nominees": [
+            {
+                "name": "Manuel Velázquez",
+                "image": "/img/nominees/manuel-velazquez.png",
+                "link": ""
+            },
+            {
+                "name": "Andrea Fonseca",
+                "image": "/img/nominees/andrea-fonseca.png",
+                "link": ""
+            },
+            {
+                "name": "Carlos Iván Ramirez",
+                "image": "/img/nominees/carlos-ivan-ramirez.png",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Socialera del año",
+        "nominees": [
+            {
+                "name": "Sandra Ledezma",
+                "image": "/img/nominees/sandra-ledezma.png",
+                "link": ""
+            },
+            {
+                "name": "Marcela Flores",
+                "image": "/img/nominees/marcela-flores.png",
+                "link": ""
+            },
+            {
+                "name": "Yaresi Carbajal",
+                "image": "/img/nominees/yaresi-carbajal.png",
+                "link": ""
+            },
+            {
+                "name": "Jessica Cueto",
+                "image": "/img/nominees/jessica-cueto.png",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Taxi dancer del año",
+        "nominees": [
+            {
+                "name": "Daniel Gutiérrez",
+                "image": "/img/nominees/daniel-gutierrez.png",
+                "link": ""
+            },
+            {
+                "name": "Bayron Zárate",
+                "image": "/img/nominees/bayron-zarate.png",
+                "link": ""
+            },
+            {
+                "name": "Erick González",
+                "image": "/img/nominees/erick-gonzalez.png",
+                "link": ""
+            },
+            {
+                "name": "Carlos Iván Ramirez",
+                "image": "/img/nominees/carlos-ivan-ramirez.png",
+                "link": ""
+            },
+            {
+                "name": "Canek Palma",
+                "image": "/img/nominees/canek-palma.png",
+                "link": ""
+            }
+        ]
+    }
+]

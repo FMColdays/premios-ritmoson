@@ -1,15 +1,14 @@
----
-import { SignIn, SignOut } from 'auth-astro/components'
-import { getSession} from "auth-astro/server"
+<button id="login" class="bg-blue-500 text-white py-2 px-4 rounded">Login</button>
+<button id="logout" class="bg-red-500 text-white py-2 px-4 rounded">Logout</button>
 
-const session = await getSession(Astro.request)
----
 
-<SignIn class="p-2 w-24 bg-blue-500 text-white" provider="google" >Login</SignIn>
-<SignOut class="p-2 w-24 bg-red-500 text-white" >Logout</SignOut>
+<script>
+    document.addEventListener('astro:page-load', async () => {
+        const { signIn, signOut } = await import("auth-astro/client")
+        const $button = document.querySelector("#login")
+        $button?.addEventListener("click", () => signIn("google"))
 
-{session  && (
-    <p>{session.user?.name}</p>
-    <p>{session.user?.email}</p>
-    <img src={session.user?.image} alt="" />
-)}
+        const $logoutButton = document.querySelector("#logout")
+        $logoutButton?.addEventListener("click", () => signOut())
+    })
+</script>

@@ -1,0 +1,25 @@
+---
+const currentPath = Astro.url.pathname
+
+const links = [
+  { text: 'Inicio', href: '/' },
+  { text: 'Votar', href: '/vota/' },
+]
+---
+
+{
+  links.map(({ text, href }) => (
+    <a
+      href={href} 
+      class:list={[
+        'font-medium text-xl hover:text-primary transition-colors duration-300',
+        {
+          'text-primary': currentPath === href,
+          'text-white': currentPath !== href,
+        },
+      ]}
+    >
+      {text}
+    </a>
+  ))
+}

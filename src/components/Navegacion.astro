@@ -1,0 +1,46 @@
+---
+import Menu from '@icons/Menu.astro'
+import NavLinks from '@components/NavLinks.astro'
+---
+
+<div class='flex items-center gap-8'>
+  <div class='hidden md:flex items-center gap-8'>
+    <NavLinks />
+  </div>
+
+  <button id='mobile-menu-button' class='md:hidden p-2' aria-label='Toggle mobile menu'>
+    <Menu class='size-8 text-primary cursor-pointer' />
+  </button>
+</div>
+
+<div
+  id='mobile-menu'
+  class='hidden md:hidden absolute top-full left-0 right-0 p-4 backdrop-blur-sm bg-black/60 border border-primary/20 border-dashed'
+>
+  <div class='flex flex-col gap-4'>
+    <NavLinks />
+  </div>
+</div>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const header = document.querySelector('#header')
+    const mobileMenuButton = document.querySelector('#mobile-menu-button')
+    const mobileMenu = document.querySelector('#mobile-menu')
+
+    if (mobileMenuButton && mobileMenu && header) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden')
+        header.classList.toggle('bg-black/60')
+      })
+
+      document.addEventListener('click', e => {
+        const target = e.target as Node
+        if (!mobileMenuButton.contains(target) && !mobileMenu.contains(target)) {
+          mobileMenu.classList.add('hidden')
+          header.classList.remove('bg-black/60')
+        }
+      })
+    }
+  })
+</script>

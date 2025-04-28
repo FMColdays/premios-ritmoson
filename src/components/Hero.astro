@@ -1,0 +1,45 @@
+<section class='h-screen relative text-white'>
+    <video class='w-full h-full object-cover object-center' src='/videos/video-hero.mp4' autoplay loop muted transition:persist="hero-video"></video>
+    <div class='absolute inset-0 h-screen bg-black/80 flex justify-center items-center'></div>
+
+    <div id="hero" class='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col gap-8 items-center justify-center text-center'>
+      <h1 class="font-ibm-plex-sans uppercase">
+        Premios
+        <span class="flex gap-2 font-kaushan-script">
+          <span class="text-secondary">Ritmo</span>
+          <span class="text-primary">Son</span>
+        </span>
+      </h1>
+      <p class="font-onest">Apoya al concursante que más te hace vibrar y vota</p>
+      <a href="/vota" class="text-xl bg-gradient-to-r from-primary hover:from-secondary to-secondary hover:to-primary text-white py-1 px-10 rounded  transition-colors duration-700">Vota</a>
+    </div>
+</section>
+
+<style>
+
+  @keyframes fade-in {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  #hero{
+    animation: fade-in 1s ease-in-out;
+  }
+
+  h1{
+    font-size: clamp(3rem, 10vw, 8rem);
+    line-height: 1;
+    letter-spacing: clamp(5px, 1vw, 20px);
+  }
+
+  p{
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    line-height: 1;
+  }
+</style>
